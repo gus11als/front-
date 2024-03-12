@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html>  
+    <head>
+        <meta charset="utf-8">  
+        <title>블록 레벨 요소 vs 인라인요소 </title>
+        <!-- 블록레벨은 전체가 쳐지고 인라인은 해당부분만 쳐짐-->
+        <style>
+            /*border은 테두리를 만들어줌 solid는 직선 dashed는 점선 디스플레이는 인라인과 블록을 지정가능(기존블록레벨을
+             인라인으로 바꿀수있다는뜻) 디스플레이는 none도 있는데 그건 안보여주는 기능 인라인블록도 있음*/
+            div{
+                border: 3px solid red;
+                display: inline;
+            }
+            span{
+                border-width: 3px;
+                border-style: dashed;
+                border-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+       <div>나는야 블록 레벨</div>
+       <br>
+       <span>나는야 인라인</span>
+    </body>
+</html>

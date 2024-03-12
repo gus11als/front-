@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   
+        <title>플렉스 박스 연습 </title>
+        <!--어떤식으로 요소를 배치할지 결정하는게 justify임 center는 중앙 flex-start와 end는 컨테이너의 끝과 앞에 배치
+            space-around는 요소들을 하나씩 일정한 값으로 떨어뜨리고 space-beteween은 컨테이너의 앞과 끝에 하나씩 배치후 중앙에 하나
+         -->
+        <!--align-item은 교차축에서의 정렬방법을 작성함 start- end center 3가지 있음 -->
+        <style>
+            .container{
+                display: flex;
+                width: 300px; height: 300px;
+                border: 2px solid black;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-wrap: nowrap;
+            }
+           .item{
+                width: 120px; height: 60px;
+                background-color: red;
+           }
+           .self{
+            /* align-self: flex-start; */
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div> <!-- 위에 self 쓰려면 item 옆에 self써야함-->
+            <div class="item">3</div>
+        </div>
+    </body>
+</html>

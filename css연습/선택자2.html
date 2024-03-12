@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html lang="en">   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   
+        <title>선택자 연습2 폰트 </title>
+        <style>
+            html{
+                font-size:  18px;
+            }
+            /* 안에 두개를 넣으면 처음꺼로 지정하고 없으면 세리프로 지정*/
+            *{
+                font-family: 굴림, serif;
+            }
+            /* 밑에는 위 html의 폰트크기가 18로 지정했으니 36이됨 text-align은 정렬기준을 바꿔줌*/
+            h1{
+                font-size: 2rem; 
+                text-align: center;
+            }
+            p{
+                font-size: 32px;
+               
+            }
+            /* span은 p태그안에 글자에서 따로 해당 또는 강조하고싶은 단어를 따로 지정하고 싶을떄 사용*/
+            span{
+                font-size: 5em;
+                color: blue;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>아무내용 없음</h1>
+        <p>꼬맹최고!<span>호호</span></p>
+    </body>
+</html>

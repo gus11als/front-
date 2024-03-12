@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   <!-- 단일태그 한글표시-->
+        <title>의사 클래스 연습 </title>
+        <!-- hover은 마우스를 올려뒀을때 active는 누르면 해당-->
+        <style>
+            [type= "button"]{
+                width: 100px; height: 30px;
+                background-color: blue; color: white;
+                border: none; border-radius: 8px;
+            }
+            [type="button"]:hover{
+                background-color: brown;
+            }
+            [type="button"]:active{
+                background-color: black;
+            }
+
+            [type="text"]:focus{
+                color:white;
+                background-color: red;
+            }
+            [type="text"]:disabled{
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="버튼">
+        <br>
+        <!-- disabled은 사용못하는 상태-->
+        <input type="text" placeholder="아무거나 쓰기" >
+        <input type="text" placeholder="아무거나 쓰기" disabled>
+    </body>
+</html>

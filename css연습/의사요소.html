@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   <!-- 단일태그 한글표시-->
+        <title>의사요소 연습 </title>
+    </head>
+   <!-- 플레이스홀더글씨는 빨간색 그 밑에 비포는 p앞에 텍스트 추가 그 밑에 에프터는 뒤에 텍스트 추가  -->
+    <style>
+        input::placeholder{
+            font-size: 24px;
+            color: red;
+        }
+        p::before{
+            content: "앞에다 추가한 텍스트 ";
+            color: red; font-weight: 900;
+        }
+        p::after{
+            content: " 뒤에다 추가한 텍스트 ";
+            color: red; font-weight: 900;
+        }
+    </style>
+    <body>
+       <input type="text" placeholder="아무거나 쓰세요">
+        <p>원래 쓰여있던 내용</p>
+    </body>
+</html>

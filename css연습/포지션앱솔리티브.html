@@ -1,0 +1,33 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   
+        <title> 포지션연습 </title>
+        <!-- absolute는 본인의 가장가까운 포지션(div)를 기준으로삼아 거기서 100px이동-->
+        <style>
+            /*만약 밑에 div의 포지션을 지우면 기준이 없기에 브라우저상 기준으로 잡아서 맨위에서 top 100이동*/
+            div{
+                width: 200px; height: 200px;
+                background-color: yellow;
+                position: relative;
+                border: 1px solid black;
+            }
+            .abs{
+                width: 100px; height: 100px;
+                background-color: red;
+                position: absolute;
+                top: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 원래 들어갈 위치에 있는곳에 그대로 p는 들어감 abs의 탑을 0으로 하면 겹쳐짐-->
+       <div></div>
+       <div>
+        <div class="abs"></div>
+       <p>sadkasopdk</p>
+    </div>
+       
+    </body>
+</html>

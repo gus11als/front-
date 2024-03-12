@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   
+        <title>플렉스 박스 연습 </title>
+        <!--flex는 진행방향을 바꿔줌 row는 행방향으로 지정(기본값= row) column은 열방향으로 row-reverse는 열의 반대
+            column-reverse 는 행의반대 -->
+        <style>
+            .container{
+                display: flex;
+                flex-direction: row;
+            }
+            .item{
+                width: 80px; height: 80px;
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </body>
+</html>

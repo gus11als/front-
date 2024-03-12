@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   <!-- 단일태그 한글표시-->
+        <title>의사 클래스2 연습 </title>
+        <!-- hover은 마우스를 올려뒀을때 active는 누르면 해당-->
+        <style>
+           body{
+            display: flex;
+            justify-content: space-between;
+           }
+           .box{
+            width: 50px; height: 50px;
+            background-color: blue; color: white;
+           }
+           /*3번쨰 박스만 빨간색으로 지정 n은 전부가 해당 2n은 곱하기 대입시 2,4 가 해당 2n-1로 하면 홀수가됨*/
+           .box:nth-child(3){
+            background-color: red;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="box">1번</div>
+        <div class="box">2번</div>
+        <div class="box">3번</div>
+        <div class="box">4번</div>
+        <div class="box">5번</div>
+    </body>
+</html>

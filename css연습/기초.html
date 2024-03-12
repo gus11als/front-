@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+
+    <head>
+        <meta charset="utf-8">   <!-- link에 스타일 넣기 css 무조건 헤드안에 넣어야함-->
+        <title>css 기초 </title>
+        <link href="style.css" rel="stylesheet">
+        <!--3번째 방법 텍스트를 위한 스타일 -->
+        <style>
+           .test3{
+                color: blueviolet;
+                font-size: 32px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+        <h1> 00:00:00</h1>
+        <button id="bt_stop">STOP</button>
+        <button id="bt_go">START</button>
+        <br>
+        <p>테스트를 위한 텍스트</p>
+        <p style="color: blue;">테스트를 위한 2번째방법 텍스트(인라인)</p>
+        <p class="test3">3번쨰방법 텍스트</p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   
+        <title>float 속성 </title>
+        <!-- float는 문서의 흐름과 관계없이 바디의 양쪽(밑은 왼쪽,오른쪽)에 자신의 크기만큼 배치-->
+        <style>
+            #a{
+                width: 100px; height: 50px;
+                background-color: orange;
+                float: right;
+            }
+            #b{
+                width: 100px; height: 100px;
+                background-color: purple;
+                float: left;
+            }
+            /* clear은 위에 차지하는 부분을 제외하고 밑에서부터 작성 both도 있는데 이건 양쪽*/
+            p{
+                clear: left;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="a"></div>
+        <div id="b"></div>
+        <p>안녕 꼬맹최고에여</p>
+        <p>안녕 꼬맹최고에여</p>
+        <p>안녕 꼬맹최고에여</p>
+        <p>안녕 꼬맹최고에여</p>
+        <p>안녕 꼬맹최고에여</p>
+        <p>안녕 꼬맹최고에여</p>
+    </body>
+</html>

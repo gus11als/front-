@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('your-background-image.jpg') center center fixed; /* 배경 이미지를 가운데 정렬하고 꽉 채우도록 설정 */
+            background-size: cover; /* 배경 이미지를 꽉 채우도록 설정 */
+            text-align: center;
+            padding: 50px;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 45px; /* 글자 크기를 24픽셀로 변경 */
+            color: #2DB400; /* 글자 색상을 어두운 회색으로 변경 */
+            margin-bottom: 20px;
+            
+        }
+
+        .login-container {
+            max-width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+
+        .login-form input {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2DB400;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 80px;
+            font-size: 20px;
+        }
+
+        .login-form button:hover {
+            background-color: #2DB400;
+        }
+
+         /* 새로 추가한 부분 */
+        .remember-me {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .remember-me input {
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            appearance: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .remember-me input:checked {
+            background-color: #2DB400;
+            border-color: #2DB400;
+        }
+
+        .remember-me input:checked::before {
+            content: '\2713'; /* 체크 표시를 나타내는 유니코드 문자 */
+            font-size: 14px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        a {
+            color: #666; /* 링크의 텍스트 색상을 회색(#666)으로 변경 */
+            text-decoration: none; /* 기본 링크 밑줄을 제거 */
+            margin-top: 100px;
+        }
+    </style>
+   
+    <h2>NAVER</h2>
+</head>
+<body>
+
+<div class="login-container">
+    <form class="login-form">
+        <input type="text" placeholder="아이디" name="username" required>
+        <input type="password" placeholder="비밀번호" name="password" required>
+        <!-- 새로 추가한 부분 -->
+        <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">로그인 상태 유지</label>
+        </div>
+        <button type="submit">로그인</button>
+        
+    </form>
+</div>
+<br>
+<a href="#">비밀번호 찾기 |</a>
+<a href="#">아이디 찾기 |</a>
+<a href="#">회원가입</a>
+<br><br>
+<a href="https://namu.wiki/w/%EC%8A%88%ED%8D%BC%20%EB%A7%88%EB%A6%AC%EC%98%A4%20%EC%8B%9C%EB%A6%AC%EC%A6%88">
+    <img src="image4.png" alt="이미지 1" style="width: 450px; height: 150px;">
+  </a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   <!-- 단일태그 한글표시-->
+        <title>상속 키워드 </title>
+    </head>
+    <!-- -->
+    <style>
+       div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px; height: 300px;
+
+        color: tomato;
+        font-size: 24px;
+        border: 3px dashed red;
+       }
+       p{
+       /*컬러는 상속이되지만 보더는 상속이 안됬음 inherit을 쓰면 상속을 받겠다라는 뜻 initial은 초기값을 받는다라는뜻
+        unset은 상속을 안받는경우 초기값을 쓴다라는 뜻 */
+       border: inherit;
+       color: inherit;
+       }
+    </style>
+    <body>
+   <div>
+    <p>가운데 p 태그</p>
+   </div>
+    </body>
+</html>

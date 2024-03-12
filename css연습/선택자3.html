@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   <!-- 단일태그 한글표시-->
+        <title>선택자 연습(특성 선택자)</title> 
+        <!-- 밑에는 해당 클래스와 아이디가 지정된것만 변함 class*= "t" 이렇게 하면 t가 포함되어있음 변하는것
+            class^= "uni"로 하면 uni로 시작되는것만 해당 class$= "ext" 로하면  ext로 끝나는것만 해당-->
+        <style>
+            [class= "item"]{
+                color: blue;
+            }
+            [id= "unique"]{
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>선택자 연습하기</h1>
+        <p>1번 문단입니다 그냥 태그</p>
+        <p class="text">2번 문단입니다 클래스있음</p>
+        <p id="unique">3번 문단입니다 아이디 있음</p>
+        <p class="text">4번 문단입니다 클래스 있음</p>
+        <p>5번 문단입니다<span>스판있는</span>태그</p>
+    </body>
+</html>

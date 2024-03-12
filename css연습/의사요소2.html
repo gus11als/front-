@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   <!-- 단일태그 한글표시-->
+        <title>의사요소 연습2 </title>
+    </head>
+    <!-- 밑의해석 퍼스트라인은 html에서 표시되는 한줄만 해당 퍼스트 레터는 첫글자만 마커는 마커만-->
+    <style>
+        p::first-line{
+            color:  red;
+        }
+        p::first-letter{
+            color: yellow;
+        }
+        li::marker{
+            color: green;
+            font-size: 100px;
+        }
+    </style>
+    <body>
+        <p>
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+    </p>
+    <br>
+    <ui>
+        <li>강아지</li>
+        <li>고양이</li>
+        <li>다람쥐</li>
+        <li>햄스터</li>
+
+    </ui>
+    </body>
+</html>

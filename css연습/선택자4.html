@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   <!-- 단일태그 한글표시-->
+        <title>자손 결합자, 형제 결합자 연습 </title>
+        <!-- 밑에 해석은 body태그안에 있는 h1태그를 선택한다임 p는 p만 span은 스판만
+            body >를 사용하면 한단계아래에 해당되는 것만가능 -->
+        <style>
+            body h1{
+                color: red;
+            }
+            /* 이 밑 해석은 h1뒤에 따라오는 모든 p에 해당 ~을 +로 변경하면 h1 바로뒤에있는 p하나만 해당*/
+            h1 ~ p{
+                color: blue;
+            }
+            /*밑의 해석은 클래스가 text 뒤에 바로오는 하나의 p만 해당되므로 text가 두개있으니까 3,5가 보라색으로 변경 */
+            .text +p {
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>선택자 연습하기</h1>
+        <p>1번 문단입니다 그냥 태그</p>
+        <p class="text">2번 문단입니다 클래스있음</p>
+        <p id="unique">3번 문단입니다 아이디 있음</p>
+        <p class="text">4번 문단입니다 클래스 있음</p>
+        <p>5번 문단입니다<span>스판있는</span>태그</p>
+    </body>
+</html>

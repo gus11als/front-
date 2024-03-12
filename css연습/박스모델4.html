@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!-- html 타입이라는 뜻-->
+<html>   <!-- 문서 시작-->
+    <head>
+        <meta charset="utf-8">   <!-- 단일태그 한글표시-->
+        <title>background 박스모델연습 </title>
+        <!-- 백그라운드에 사진도 넣을수있음 -->
+        <style>
+            div{
+                box-sizing: border-box;
+                width: 500px; height: 500px;
+                border: 5px solid tomato;
+                /* background-color: blue; */
+                background-image: url(./factory.jpg); /*이것만 하면 백그라운드가 크기에 맞게 계속 채움*/
+                background-repeat: no-repeat;/* 이거쓰면 반복안함*/
+                background-position: center; /*기본값은 left top임 */
+                background-size: 300px 300px; /* cover은 찌그러지지않는 한도내에 채워줌
+                 contain은 이미지가 찌그리지않거나 잘리지않는 한도내로 채워줌*/
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>헬로우</div>
+    </body>
+</html>
